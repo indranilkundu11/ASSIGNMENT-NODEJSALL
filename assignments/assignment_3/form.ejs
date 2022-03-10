@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .main-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 97vh;
+      background-color:rgb(211, 210, 210);
+    }
+    .card {
+      padding: 20px;
+      border-radius: 5px;
+      border: 1px solid rgb(190, 185, 185);
+      background-color: aquamarine;
+      box-shadow: 1px 0px 9px 1px rgba(174, 148, 148, 0.77);
+    }
+    #btn {
+      padding: 2px 7px;
+      color: white;
+      background-color: black;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <div class="card">
+      <form action="/user/add" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" required placeholder="Name" value=""><br>
+        <label for="age">Age:</label><br>
+        <input type="number" name="age" placeholder="Age" value=""><br>
+        <label for="email">Email:</label><br>
+        <input type="text" name="email" placeholder="Email" value=""><br>
+        <label for="profession">Profession:</label><br>
+        <input type="text" name="profession" placeholder="Profession" value=""><br>
+        <label for="city">City:</label><br>
+        <input type="text" name="city" placeholder="City" value=""><br><br>
+        <input type="submit" value="Submit" id="btn">
+      </form>
+    </div>
+  </div>
+</body>
+</html>
